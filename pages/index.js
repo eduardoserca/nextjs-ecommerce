@@ -5,9 +5,6 @@ export default function Home() {
 
   const {data: session} = useSession();
 
-  console.log("Obteniendo la sesion")
-  console.log({session})
-
   return <Layout>
     <div className="text-blue-900 flex justify-between">
       <h2>

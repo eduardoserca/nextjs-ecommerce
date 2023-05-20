@@ -62,7 +62,6 @@ export default function ProductForm({
 
       function updateImagesOrder(images){
         setImages(images);
-        console.log(images);
       }
 
     return (

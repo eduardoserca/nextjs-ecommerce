@@ -80,24 +80,30 @@ export default function Categories(){
                 :'New category name'}
             </label>
 
-            <form onSubmit={saveCategory} className="flex gap-1">
-                <input 
-                    className="nb-0" 
-                    type="text" 
-                    placeholder={'Category name'} 
-                    onChange={ev => setName(ev.target.value)}
-                    value={name}/>
+            <form onSubmit={saveCategory}>
+
+                <div className="flex gap-1">
+                    
+                    <input                         
+                        type="text" 
+                        placeholder={'Category name'} 
+                        onChange={ev => setName(ev.target.value)}
+                        value={name}/>
                 
-                <select 
-                    onChange={ev=>setParentCategory(ev.target.value)}
-                    value={parentCategory}>
-                    <option value="0">No parent category</option>
-                    {
-                        categories.length > 0 && categories.map(category => (
-                            <option value={category._id}>{category.name}</option>
-                        ))
-                    }                    
-                </select>
+                    <select 
+                        onChange={ev=>setParentCategory(ev.target.value)}
+                        value={parentCategory}>
+                        <option value="0">No parent category</option>
+                        {
+                            categories.length > 0 && categories.map(category => (
+                                <option value={category._id}>{category.name}</option>
+                            ))
+                        }                    
+                    </select>
+
+                </div>    
+
+                
 
                 <button 
                     type="submit" 

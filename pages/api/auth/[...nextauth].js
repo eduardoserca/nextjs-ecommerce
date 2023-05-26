@@ -14,6 +14,5 @@ export default NextAuth({
   ],
 
   adapter: MongoDBAdapter(clientPromise),
-  
-  secret: "LlKq6ZtYbr+hTC073mAmAh9/h2HwMfsFo4hrfCx5mLg=",
+
 })

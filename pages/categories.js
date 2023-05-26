@@ -96,7 +96,7 @@ export default function Categories(){
                         <option value="0">No parent category</option>
                         {
                             categories.length > 0 && categories.map(category => (
-                                <option value={category._id}>{category.name}</option>
+                                <option key={category._id} value={category._id}>{category.name}</option>
                             ))
                         }                    
                     </select>

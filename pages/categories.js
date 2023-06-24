@@ -175,7 +175,7 @@ export default function Categories(){
                                 <button
                                     type="button" 
                                     onClick={()=>removeProperty(index)}
-                                    className="btn-default">Remove</button>
+                                    className="btn-red">Remove</button>
                             </div>
                         ) )
                     }

@@ -136,7 +136,7 @@ export default function ProductForm({
                                         }>
                                     {
                                         p.values.map((v,i) => (
-                                            <option key={i} value={v}>{v}</option>
+                                            <option key={i} value={v}>{v}</option>   
                                         ))
                                     }
                                 </select>
